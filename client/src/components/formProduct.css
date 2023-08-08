@@ -1,0 +1,8 @@
+.card{
+    width: 25% !important;
+}
+.container-card{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,10 +1,11 @@
 import './App.css'
+import { FormProduct } from './components/FormProduct.jsx'
 
 function App() {
 
   return (
     <>
-      <h1>stiley store</h1>
+      <FormProduct></FormProduct>
     </>
   )
 }

@@ -9,8 +9,23 @@ const productsSchema = mongoose.Schema({
     required: true,
     trim: true
   },
+  price: {
+    type: Number,
+    required: true,
+    trim: true
+  },
+  size: {
+    type: String,
+    required: true,
+    trim: true
+  },
   amount: {
     type: Number,
+    required: true,
+    trim: true
+  },
+  category: {
+    type: String,
     required: true,
     trim: true
   },
@@ -18,8 +33,8 @@ const productsSchema = mongoose.Schema({
     type: String,
     required: true,
     trim: true
-  }
-  
+  },
+
 })
 
 // EXPORTACION DEL MODELO CON EL NOMBRE "PRODUCTS" COMO PRIMER PARAMETRO Y EL SCHEMA COMO EL OTRO
