@@ -1,5 +1,8 @@
+// IMPORTACION DE MONGOOSE
 import mongoose from "mongoose";
 
+// CREACION DEL SCHEMA PARA EL USUARIO. UN SCHEMA HACE REFERENCIA
+// A LA ESTRUCTURA QUE TENDRA NUESTRA TABLA EN LA BASE DE DATOS
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -24,4 +27,5 @@ const userSchema = new mongoose.Schema({
 },{
     timestamps: true
 })
+// EXPORTACION DEL MODELO CON EL NOMBRE "USERS" COMO PRIMER PARAMETRO Y EL SCHEMA COMO EL OTRO
 export default mongoose.model("Users", userSchema);
