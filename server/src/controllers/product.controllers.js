@@ -3,7 +3,7 @@ import Product from '../models/products.models.js'
 
 // CONTROLADOR PARA GUARDAR DATOS DE UN PRODUCTOS
 export const saveProduct = async (req, res) => {
-    const { productName, price, size, amount, category, color } = req.body;
+    const { productName, price, size, amount, category, color, image } = req.body;
     try {
         const newProduct = new Product({
             productName,
@@ -11,7 +11,8 @@ export const saveProduct = async (req, res) => {
             size,
             amount,
             category,
-            color
+            color,
+            image
         });
         const productSave = await newProduct.save();
         res.status(200).json({ 
@@ -21,7 +22,8 @@ export const saveProduct = async (req, res) => {
             size: productSave.size,
             amount: productSave.amount,
             category: productSave.category,
-            color: productSave.color
+            color: productSave.color,
+            image: productSave.image
          })
 
     } catch (error) {
@@ -39,7 +41,7 @@ export const getProducts = async (req, res) => {
     }
     
 };
-// CONTROLADOR PARA OBTENER LOS DATOS DE UN PRODUCTOS
+// CONTROLADOR PARA OBTENER LOS DATOS DE UN PRODUCTO
 export const getProductByid = async (req, res) => {
     try {
         const { id } = req.params;
