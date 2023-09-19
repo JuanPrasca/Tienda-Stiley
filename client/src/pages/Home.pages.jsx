@@ -5,6 +5,7 @@ import { ProductsSection } from '../components/comoponentsHome/ProductSection'
 import { Ubication } from '../components/comoponentsHome/Ubication'
 import { Footer } from '../sharedComponents/Footer'
 export const Home = () => {
+  
   const comments = [
     { name: 'Juan Carlos Prasca', comment: 'Excelentes productos', date: '17 de septiembre del 2023' },
     { name: 'Diego', comment: 'Excelentes productos', date: '17 de septiembre del 2023' },

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import { Link } from 'react-router-dom'
 import { getProducts } from '../../api/httpRequest.products'
 
 export const ProductsSection = ({title}) => {
@@ -46,16 +46,17 @@ export const ProductsSection = ({title}) => {
                 <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Color: {item.color}</span>
               </div>
               <div className="px-6 py-4">
-                <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                <Link to="/productInfo" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                   Comprar
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
         <div className="flex justify-center my-5">
-            <button className="p-4 bg-white shadow-lg border rounded-full text-md w-112" onClick={botonValue === 'Ver mas' ? seeAll : seeLess} >{botonValue}
-            </button>
+          <button className="p-4 bg-white shadow-lg border rounded-full text-md w-112" onClick={botonValue === 'Ver mas' ? seeAll : seeLess}>
+            {botonValue}
+          </button>
         </div>
       </section>
     )

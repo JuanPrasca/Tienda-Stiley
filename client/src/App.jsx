@@ -11,6 +11,7 @@ import { RegisterProduct } from './pages/RegisterProducts.pages'
 import { Underwear } from './pages/Underwear.pages'
 import { Women } from './pages/Woman.pages'
 import { NotFound } from './pages/404.pages'
+import { ProductInfo } from './pages/ProductInfo'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="registerProduct" element={<RegisterProduct />} />
           <Route path="underwear" element={<Underwear />} />
           <Route path="women" element={<Women />} />
+          <Route path="productInfo" element={<ProductInfo />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

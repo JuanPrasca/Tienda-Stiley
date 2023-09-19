@@ -24,6 +24,19 @@ export default {
         124: '28rem',
         128: '32rem',
         144: '36rem'
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        white: '#ffffff',
+        purple: '#3f3cbb',
+        midnight: '#121063',
+        metal: '#565584',
+        tahiti: '#3ab7bf',
+        silver: '#ecebff',
+        bubblegum: '#ff77e9',
+        red: '#dc2626',
+        bermuda: '#78dcca'
       }
     }
   },
