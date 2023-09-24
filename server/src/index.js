@@ -4,16 +4,6 @@ import cors from 'cors'; // Middleware para manejar CORS (Cross-Origin Resource 
 import indexRoutes from './routes/index.routes.js'; // Rutas para el índice
 import productsRoutes from './routes/products.routes.js'
 /* import userRoutes from './routes/user.routes.js'; // Rutas relacionadas con los usuarios
-import fichasRoutes from './routes/fichas.routes.js'; // Rutas relacionadas con las fichas
-import apprenticesRoutes from './routes/apprentices.routes.js'; // Rutas relacionadas con los aprendices
-import articleRoutes from './routes/article.routes.js'; // Rutas relacionadas con los artículos
-import causeRoutes from './routes/cause.routes.js'; // Rutas relacionadas con las causas
-import requestsRoutes from './routes/request.routes.js'; // Rutas relacionadas con las solicitudes
-import documentsRoutes from './routes/documents.routes.js'; // Rutas relacionadas con los documentos
-import modalitiesRouter from './routes/modalities.routes.js'; // Rutas relacionadas con las modalidades
-import ArticleNumberRouter from './routes/articleNumber.routes.js'; // Rutas relacionadas con los números de artículo
-import ParagraphRouter from './routes/paragraph.routes.js'; // Rutas relacionadas con los párrafos
-import chapterRouter from './routes/chapter.routes.js'; // Rutas relacionadas con los capítulos
 import fileRouter from './routes/file.routes.js'; // Rutas relacionadas con los archivos */
 import { PORT } from './config.js/'; // Importar el puerto desde la configuración
 
@@ -26,16 +16,6 @@ app.use(express.json()); // Habilitar el análisis del cuerpo de solicitud JSON
 app.use(indexRoutes);
 app.use('/api', productsRoutes);
 /* app.use('/api', userRoutes);
-app.use('/api', fichasRoutes);
-app.use('/api', articleRoutes);
-app.use('/api', causeRoutes);
-app.use('/api', apprenticesRoutes);
-app.use('/api', requestsRoutes);
-app.use('/api', documentsRoutes);
-app.use('/api', modalitiesRouter);
-app.use('/api', chapterRouter);
-app.use('/api', ArticleNumberRouter);
-app.use('/api', ParagraphRouter);
 app.use('/api', fileRouter); */
 
 // Configurar un manejador para rutas no encontradas (404)
