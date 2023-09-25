@@ -1,17 +1,16 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-
-import Navbar from './sharedComponents/Navbar'
-import { About } from './pages/About.pages'
-import { Accessories } from './pages/Accessories.pages'
-import { Home } from './pages/Home.pages'
-import { Men } from './pages/Men.pages'
-import { Promotions } from './pages/Promotions.pages'
-import { RegisterProduct } from './pages/RegisterProducts.pages'
-import { Underwear } from './pages/Underwear.pages'
-import { Women } from './pages/Woman.pages'
-import { NotFound } from './pages/404.pages'
-import { ProductInfo } from './pages/ProductInfo'
+import Navbar from './components/sharedComponents/Navbar'
+import { About } from './components/pages/About.pages'
+import { Accessories } from './components/pages/Accessories.pages'
+import { Home } from './components/pages/Home.pages'
+import { Men } from './components/pages/Men.pages'
+import { Promotions } from './components/pages/Promotions.pages'
+import { RegisterProduct } from './components/pages/RegisterProducts.pages'
+import { Underwear } from './components/pages/Underwear.pages'
+import { Women } from './components/pages/Woman.pages'
+import { NotFound } from './components/pages/404.pages'
+import { ProductInfo } from './components/pages/ProductInfo'
 
 function App() {
 

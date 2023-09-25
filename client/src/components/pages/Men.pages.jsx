@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getProducts } from '../api/httpRequest.products'
+import { getProducts } from '../../api/httpRequest.products'
 
-import '../styles/men.style.css'
 
 export const Men = () => {
   const [products, setProducts] = useState([])

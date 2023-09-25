@@ -1,8 +1,0 @@
-.mainContaine{
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
-    gap: 20px !important;
-}
-.card-img{
-    height: 350px;
-}

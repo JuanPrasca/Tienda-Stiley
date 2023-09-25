@@ -657,11 +657,6 @@ video {
   margin-right: 2rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -756,10 +751,6 @@ video {
   display: inline-flex;
 }
 
-.table {
-  display: table;
-}
-
 .flow-root {
   display: flow-root;
 }
@@ -812,8 +803,8 @@ video {
   height: 80vh;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[88vh\] {
+  height: 88vh;
 }
 
 .h-screen {

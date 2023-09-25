@@ -1,8 +1,8 @@
-import imgHome from '../../public/images/imgHome.jpg'
-import { Categories } from '../components/comoponentsHome/Categories'
-import { CommentsSection } from '../components/comoponentsHome/CommentsSection'
-import { ProductsSection } from '../components/comoponentsHome/ProductSection'
-import { Ubication } from '../components/comoponentsHome/Ubication'
+import imgHome from '../../../public/images/imgHome.jpg'
+import { Categories } from '../componentsHome/Categories'
+import { CommentsSection } from '../componentsHome/CommentsSection'
+import { ProductsSection } from '../componentsHome/ProductSection'
+import { Ubication } from '../componentsHome/Ubication'
 import { Footer } from '../sharedComponents/Footer'
 export const Home = () => {
   

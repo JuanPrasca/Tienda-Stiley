@@ -4,7 +4,7 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
-import stileyLogo from '../../public/images/logo.png'
+import stileyLogo from '../../../public/images/logo.png'
 
 const products = [
   { name: 'Hombres', description: 'Gran variedad de productos Masculinos', href: '/men', icon: ChartPieIcon },

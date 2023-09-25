@@ -14,9 +14,9 @@ export const ProductsSection = ({title}) => {
 
      const getProductsHttp = async () => {
        try {
-         const response = await getProducts('getproducts')
-         console.log(response)
-         setProduts(response)
+         const response = await getProducts('productos')
+         console.log(response.result)
+         setProduts(response.result)
        } catch (error) {
          console.error(error)
        }
@@ -34,10 +34,10 @@ export const ProductsSection = ({title}) => {
         <h1 className="text-center font-bold text-3xl font-farro my-10">{title}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {listProductsNews.map((item) => (
-            <div className="max-w-xs rounded overflow-hidden shadow-lg my-3" key={item._id}>
+            <div className="max-w-xs rounded overflow-hidden shadow-lg my-3" key={item.IdProducto}>
               <img src={item.image} alt="Producto" className="w-full h-[60%]" />
               <div className="px-6 py-4">
-                <h1 className="font-bold text-xl mb-2">{item.productName}</h1>
+                <h1 className="font-bold text-xl mb-2">{item.nombreProducto}</h1>
                 <p className="text-gray-700 text-base">{item.category}</p>
               </div>
               <div className="px-6 py-4">

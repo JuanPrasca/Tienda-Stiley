@@ -1,25 +1,25 @@
 import axios from "axios";
 
-const initialUrl = "http://localhost:2000/api/products";
+const initialUrl = "http://localhost:3000/api/";
 
 
-export const createProduct = async (url, name, price, size, amount, category, color, image) => {
-  try {
-    const response = await axios.post(`${initialUrl}/${url}`, {
-      productName: name,
-      price: price,
-      size: size,
-      amount: amount,
-      category: category,
-      color: color,
-      image: image
-    })
-    return response
-  } catch (error) {
-    alert(error)
-  }
+// export const createProduct = async (url, name, price, size, amount, category, color, image) => {
+//   try {
+//     const response = await axios.post(`${initialUrl}/${url}`, {
+//       productName: name,
+//       price: price,
+//       size: size,
+//       amount: amount,
+//       category: category,
+//       color: color,
+//       image: image
+//     })
+//     return response
+//   } catch (error) {
+//     alert(error)
+//   }
   
-}
+// }
 
 export const getProducts = async (url) => {
   try {

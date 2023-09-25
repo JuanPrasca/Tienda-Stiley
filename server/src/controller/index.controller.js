@@ -1,3 +1,3 @@
 export const index = (req, res) => {
-  res.status(200).send({ message : 'Welcome to Stiley Store'})
+  res.status(200).send({ message: 'Welcome to Stiley Store' })
 }
