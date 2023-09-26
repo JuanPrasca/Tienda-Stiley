@@ -30,6 +30,10 @@ export const getProducts = async (url) => {
     alert(error)
   }
 }
+export const getProductById = async (url, id) => {
+  const response = await axios.get(`${initialUrl}/${url}/${id}`)
+  return response.data
+}
 
 export const deleteProduct = async (url) => {
   try {
